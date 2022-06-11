@@ -66,7 +66,7 @@
 ## About The Project
 
 <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/python project logo.png" alt="Logo" width="80" height="80">
+    <img src="images/large_python_project_logo.png" alt="Logo" width="80" height="80">
   </a>
 
 Using this repo to track my progress on learning Python!
