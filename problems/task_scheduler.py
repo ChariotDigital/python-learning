@@ -8,7 +8,16 @@
 # Burte force:
 # try out every premutation of paths through the numbers of tasks that satisfy the constraint
 # not sure how many total are avaulable or the frequency of tasks
-# we do not know during each cycle how m
+# we do not know during each cycle how many chars are left or the frequency of each character
+
+# Optimal solution
+# we know that n+1 is the min amount of unique characters we can place in a row before we process a character we have already seen
+# setup a freq map and then make a heap from the map
+# pop at most n+1 values from the heap, and then decrement each.
+# if the popped values are greater than 0 after being decremented, place them back in the heap
+# for this cycle, add to time n+1 unless the heap is empty,, in which case add the number of characters left in the last temp array
+ 
+
 
 
 import heapq
@@ -48,7 +57,3 @@ test_cases = [
 
 for case in test_cases:
     print(task_scheduler(case.case, case.n))
-
-# nums = [1,2,3]
-# for num in nums:
-#     print(num)
